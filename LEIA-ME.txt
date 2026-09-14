@@ -1,25 +1,20 @@
-SITE INTEGRADO — ISABELLY BARBOSA
+ISABELLY BARBOSA — MEU OLHAR V2.1
 
-Este pacote foi preparado a partir do index.html atual enviado.
+ALTERAÇÕES:
+- "O Olhar" passou a se chamar "Meu Olhar".
+- Desktop mantém a experiência que já estava aprovada.
+- Mobile foi redesenhado:
+  * fotos em tela cheia, uma por vez;
+  * vídeos maiores e layouts verticais;
+  * tipografia reajustada;
+  * seção de enquadramento simplificada;
+  * "O que aconteceu / O que eu enxerguei" em formato vertical;
+  * chat surpresa abre como painel mobile;
+  * autoplay otimizado para não tocar vários vídeos ao mesmo tempo.
 
-O QUE FOI ALTERADO NO INDEX:
-- Adicionado link "O Olhar ↗" no menu.
-- Adicionado "Entrar em O Olhar ↗" no hero.
-- O restante do conteúdo do index foi preservado.
-
-NOVOS ARQUIVOS:
+ARQUIVOS A SUBSTITUIR NO GITHUB:
 - olhar.html
 - olhar.css
 - olhar.js
-- capa-olhar.jpg
-- pasta olhar-media/ com 7 fotos e 3 vídeos otimizados.
 
-COMO SUBIR NO GITHUB:
-1. Substitua APENAS o index.html pelo index.html deste pacote.
-2. NÃO substitua style.css nem main.js do site principal.
-3. Envie olhar.html, olhar.css, olhar.js e capa-olhar.jpg para a raiz.
-4. Envie a pasta olhar-media inteira para a raiz.
-5. Faça Commit.
-6. A subpágina será acessada em /olhar.html
-
-Os vídeos antigos do portfólio principal continuam onde já estão.
+Os demais arquivos e a Home permanecem como estão.

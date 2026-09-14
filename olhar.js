@@ -59,3 +59,24 @@ if(breakSection)cio.observe(breakSection);
 document.getElementById('chatClose')?.addEventListener('click',hideChat);
 document.getElementById('chatContinue')?.addEventListener('click',hideChat);
 chat?.addEventListener('click',e=>{if(e.target===chat)hideChat()});
+
+
+/* V2.1 mobile: reduzir movimentos pesados e melhorar autoplay */
+const isMobile = matchMedia('(max-width:700px)').matches;
+
+if (isMobile) {
+  // preserva bateria e fluidez: só um vídeo por vez
+  const vids = Array.from(document.querySelectorAll('video'));
+  const mobileObs = new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+      const v = entry.target;
+      if(entry.isIntersecting && entry.intersectionRatio > .55){
+        vids.forEach(other=>{ if(other!==v) other.pause(); });
+        v.play().catch(()=>{});
+      } else {
+        v.pause();
+      }
+    });
+  }, {threshold:[0,.55,1]});
+  vids.forEach(v=>mobileObs.observe(v));
+}
